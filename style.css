@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --btn-light: hsl(240, 100%, 91%);
+  --btn-dark: hsl(0, 0%, 0%);
+  --dark-text: hsl(0, 0%, 100%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+header,
+main {
+  width: 70%;
+  margin-inline: auto;
+}
+
+.about-us,
+.services {
+  margin: 2rem 0;
+}
+
+main p {
+  text-align: justify;
+}
+
+h2 {
+  text-align: center;
+}
+
+.btn-primary {
+  font-size: 1rem;
+  padding: 0.8em 1em;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-light {
+  background-color: var(--btn-light);
+}
+
+.btn-dark {
+  background-color: var(--btn-dark);
+  color: var(--dark-text);
+}
